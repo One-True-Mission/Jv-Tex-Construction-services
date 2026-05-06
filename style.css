@@ -4,9 +4,12 @@
    ============================================ */
 
 :root {
-  --clay: #a0481f;
-  --clay-dark: #7a3517;
-  --rust: #c75d2c;
+  --slate: #3d5a7a;
+  --slate-dark: #2c4258;
+  --slate-light: #5a7a9c;
+  --barn: #a83232;
+  --barn-dark: #832525;
+  --barn-light: #c44545;
   --asphalt: #2b2722;
   --asphalt-light: #3d3832;
   --bone: #f3ece1;
@@ -128,7 +131,7 @@ header {
 }
 
 .logo-text-wrap { color: var(--asphalt); }
-.logo-dot { color: var(--clay); }
+.logo-dot { color: var(--slate); }
 
 nav ul {
   display: flex;
@@ -153,22 +156,22 @@ nav a:not(.cta-btn)::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--clay);
+  background: var(--slate);
   transition: width 0.3s ease;
 }
 
 nav a:not(.cta-btn):hover::after,
 nav a.active::after { width: 100%; }
-nav a:hover, nav a.active { color: var(--clay); }
+nav a:hover, nav a.active { color: var(--slate); }
 
 .cta-btn {
-  background: var(--clay);
+  background: var(--barn);
   color: var(--bone) !important;
   padding: 10px 20px;
   border-radius: 6px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  border: 2px solid var(--clay);
+  border: 2px solid var(--barn);
   transition: all 0.2s;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -234,7 +237,7 @@ nav a:hover, nav a.active { color: var(--clay); }
   background: rgba(243, 236, 225, 0.1);
   backdrop-filter: blur(4px);
   padding: 8px 16px;
-  border-left: 3px solid var(--safety);
+  border-left: 3px solid var(--slate-light);
   color: var(--bone);
   font-size: 0.85rem;
   font-weight: 700;
@@ -248,7 +251,7 @@ nav a:hover, nav a.active { color: var(--clay); }
   content: '';
   width: 8px;
   height: 8px;
-  background: var(--safety);
+  background: var(--slate-light);
   border-radius: 50%;
 }
 
@@ -262,7 +265,7 @@ nav a:hover, nav a.active { color: var(--clay); }
 }
 
 .hero h1 .accent {
-  color: var(--safety);
+  color: var(--barn-light);
   font-style: italic;
   font-weight: 600;
 }
@@ -312,16 +315,16 @@ nav a:hover, nav a.active { color: var(--clay); }
 }
 
 .btn-primary {
-  background: var(--clay);
-  border-color: var(--clay);
+  background: var(--barn);
+  border-color: var(--barn);
   color: var(--bone);
 }
 
 .btn-primary:hover {
-  background: var(--rust);
-  border-color: var(--rust);
+  background: var(--barn-dark);
+  border-color: var(--barn-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(160, 72, 31, 0.4);
+  box-shadow: 0 8px 20px rgba(168, 50, 50, 0.4);
 }
 
 .btn-secondary {
@@ -345,8 +348,8 @@ nav a:hover, nav a.active { color: var(--clay); }
    ============================================ */
 .marquee {
   background: var(--asphalt);
-  border-top: 3px solid var(--safety);
-  border-bottom: 3px solid var(--safety);
+  border-top: 3px solid var(--barn);
+  border-bottom: 3px solid var(--barn);
   overflow: hidden;
   position: relative;
   padding: 18px 0;
@@ -376,7 +379,7 @@ nav a:hover, nav a.active { color: var(--clay); }
 .marquee-dot {
   width: 10px;
   height: 10px;
-  background: var(--safety);
+  background: var(--barn);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -407,11 +410,11 @@ section {
 .frame-bone {
   background: var(--bone);
   color: var(--ink);
-  border-top: 4px solid var(--clay);
+  border-top: 4px solid var(--slate);
 }
 
 .frame-clay {
-  background: var(--clay);
+  background: var(--slate);
   color: var(--bone);
   border-top: 4px solid var(--safety);
 }
@@ -424,8 +427,8 @@ section {
 
 /* === Text colors per frame === */
 .frame-bone h1, .frame-bone h2, .frame-bone h3, .frame-bone h4 { color: var(--asphalt); }
-.frame-bone .section-eyebrow { color: var(--clay); }
-.frame-bone .section-eyebrow::before { background: var(--clay); }
+.frame-bone .section-eyebrow { color: var(--slate); }
+.frame-bone .section-eyebrow::before { background: var(--slate); }
 .frame-bone .section-intro { color: var(--asphalt-light); }
 
 .frame-clay h1, .frame-clay h2, .frame-clay h3, .frame-clay h4 { color: var(--bone); }
@@ -499,7 +502,7 @@ section {
 .frame-bone .service-card,
 .frame-bone .why-card {
   background: var(--bone-dark);
-  border-top: 4px solid var(--clay);
+  border-top: 4px solid var(--slate);
   color: var(--ink);
 }
 
@@ -510,12 +513,12 @@ section {
 .frame-bone .why-card p { color: var(--asphalt-light); }
 
 .frame-bone .service-icon {
-  background: var(--clay);
+  background: var(--slate);
   color: var(--bone);
 }
 
 .frame-bone .service-num,
-.frame-bone .why-card .num { color: var(--clay); }
+.frame-bone .why-card .num { color: var(--slate); }
 
 /* === Cards inside a CLAY frame === */
 .frame-clay .service-card,
@@ -532,12 +535,12 @@ section {
 .frame-clay .why-card p { color: var(--asphalt-light); }
 
 .frame-clay .service-icon {
-  background: var(--clay);
+  background: var(--slate);
   color: var(--bone);
 }
 
 .frame-clay .service-num,
-.frame-clay .why-card .num { color: var(--clay); }
+.frame-clay .why-card .num { color: var(--slate); }
 
 /* === Cards inside an ASPHALT frame === */
 .frame-asphalt .service-card,
@@ -660,7 +663,7 @@ section {
   padding: 14px 18px;
   font-family: 'Zilla Slab', serif;
   font-weight: 700;
-  border-left: 4px solid var(--safety);
+  border-left: 4px solid var(--barn);
   border-radius: 8px;
 }
 
@@ -670,7 +673,7 @@ section {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--safety);
+  color: var(--barn-light);
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 4px;
 }
@@ -714,7 +717,7 @@ section {
   margin-top: 4px;
 }
 
-.frame-bone .signature-block .title { color: var(--clay); }
+.frame-bone .signature-block .title { color: var(--slate); }
 .frame-clay .signature-block .title { color: var(--safety); }
 .frame-asphalt .signature-block .title { color: var(--safety); }
 
@@ -722,7 +725,7 @@ section {
    CTA STRIP (full-width, between sections)
    ============================================ */
 .cta-strip {
-  background: var(--clay);
+  background: var(--slate);
   padding: 70px 0;
   color: var(--bone);
   text-align: center;
@@ -736,7 +739,7 @@ section {
   height: 100%;
   width: 80px;
   top: 0;
-  background: repeating-linear-gradient(45deg, transparent 0 14px, rgba(241, 184, 66, 0.5) 14px 28px);
+  background: repeating-linear-gradient(45deg, transparent 0 14px, rgba(168, 50, 50, 0.5) 14px 28px);
 }
 
 .cta-strip::before { left: 0; }
@@ -755,13 +758,13 @@ section {
 }
 
 .cta-strip .btn-primary {
-  background: var(--asphalt);
-  border-color: var(--asphalt);
+  background: var(--barn);
+  border-color: var(--barn);
 }
 
 .cta-strip .btn-primary:hover {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--barn-dark);
+  border-color: var(--barn-dark);
 }
 
 /* ============================================
@@ -777,7 +780,7 @@ section {
   grid-template-columns: auto 1fr;
   gap: 28px;
   align-items: start;
-  border-left: 5px solid var(--clay);
+  border-left: 5px solid var(--slate);
 }
 
 .service-detail:last-child { margin-bottom: 0; }
@@ -785,7 +788,7 @@ section {
 .service-detail .icon-wrap {
   width: 72px;
   height: 72px;
-  background: var(--clay);
+  background: var(--slate);
   color: var(--bone);
   border-radius: 12px;
   display: flex;
@@ -855,7 +858,7 @@ section {
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--safety);
+  background: var(--barn);
 }
 
 .contact-info-block h3 {
@@ -878,7 +881,7 @@ section {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  color: var(--safety);
+  color: var(--slate-light);
   margin-top: 2px;
 }
 
@@ -898,14 +901,14 @@ section {
   color: var(--bone);
 }
 
-.contact-row a.value:hover { color: var(--safety); }
+.contact-row a.value:hover { color: var(--barn-light); }
 
 .form-block {
   background: var(--bone-dark);
   padding: 40px 36px;
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
-  border-top: 4px solid var(--clay);
+  border-top: 4px solid var(--slate);
 }
 
 .form-block h3 { font-size: 1.5rem; margin-bottom: 8px; color: var(--asphalt); }
@@ -941,7 +944,7 @@ section {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--clay);
+  border-color: var(--slate);
 }
 
 .form-group textarea { resize: vertical; min-height: 110px; }
@@ -955,9 +958,9 @@ section {
 .form-block button {
   width: 100%;
   padding: 16px;
-  background: var(--clay);
+  background: var(--barn);
   color: var(--bone);
-  border: 2px solid var(--clay);
+  border: 2px solid var(--barn);
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
@@ -969,8 +972,8 @@ section {
 }
 
 .form-block button:hover {
-  background: var(--asphalt);
-  border-color: var(--asphalt);
+  background: var(--barn-dark);
+  border-color: var(--barn-dark);
 }
 
 /* ============================================
@@ -995,12 +998,12 @@ section {
 
 .compare-card.compare-us {
   background: var(--bone);
-  border-top: 4px solid var(--clay);
+  border-top: 4px solid var(--slate);
 }
 
 .compare-card h3 { font-size: 1.4rem; margin-bottom: 16px; }
 .compare-card.compare-them h3 { color: var(--asphalt-light); }
-.compare-card.compare-us h3 { color: var(--clay); }
+.compare-card.compare-us h3 { color: var(--slate); }
 
 .compare-card ul { list-style: none; }
 
@@ -1059,7 +1062,7 @@ footer {
   transition: color 0.2s;
 }
 
-.footer-col a:hover { color: var(--safety); }
+.footer-col a:hover { color: var(--barn-light); }
 
 .footer-bottom {
   padding-top: 24px;
